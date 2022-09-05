@@ -1,0 +1,57 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    margin-right: 3rem;
+}
+h1{
+    margin-left: 3rem;
+}
+li{
+    list-style:none;
+    margin-left: 2rem;
+    padding-top: 8px;
+    font-size: 1.2rem;
+}
+.skills{
+    display: flex;
+    text-align:center;
+    margin-top: 1rem;
+}
+.skills>div>p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding:2 rem */
+}
+img[src="images/laptop.jpg"]{
+    height: 100vh;
+    width: 95vw;
+    margin-left: 1.5vw;
+    margin-right: 2vw;
+
+}
+img{
+    height:150px;
+    width:150px
+}
+.footer{
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+.footer>p{
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:green;
+}
+/* a:link, a:visited{
+    color:black
+} */
+a:hover{
+    color:red;
+}

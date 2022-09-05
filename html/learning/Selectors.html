@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* universal selector */
+        *{
+            background-color: green;
+        }
+    div{
+            color:green
+        }
+
+    .textcolor{
+        color:red
+    }
+    .largetext{
+        font-size: 30px;
+    }
+    .textcolor.largetext{
+        background-color: black;
+    }
+    #unique{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 60px;
+        color:brown
+    }
+    h4,h3,a{
+        color: chartreuse;
+    }
+    div p span{
+        color:darkorange;
+    }
+    div>p>span{
+        color:blue
+    }
+    a[target="_blank"]{
+        color:lightcoral
+    }
+    a[href="http://nados.io"]{
+        color:lightseagreen
+    }
+    p[class="para"]{
+        color:brown
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- element selector -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis magni quo modi numquam ipsa sapiente veritatis harum. Doloremque dolores ducimus quam, nesciunt ex eaque. Harum ducimus laboriosam ex. Iure, accusamus.
+</p>
+<div>
+    <h1>im heading</h1>
+    <p>im paragraph</p>
+</div>
+
+    <!-- class selector -->
+<p class="textcolor largetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat architecto magnam praesentium! Repudiandae facere alias natus esse delectus, ex ratione similique explicabo blanditiis eius ducimus sequi vero incidunt? Fugiat, voluptatibus!
+</p>
+<p class="largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nemo porro, dolores atque natus ipsam repellendus esse, consectetur adipisci debitis reprehenderit! Accusantium aliquam omnis maiores nulla ducimus explicabo blanditiis corrupti.
+</p>
+<p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, dignissimos, ducimus blanditiis porro sequi maiores ratione laudantium voluptas ut unde vitae! Veritatis doloremque sequi id voluptates omnis. Illum, dignissimos tenetur!
+</p>
+
+<!-- id selector -->
+<p class="textcolor largetext" id="unique">id selector Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat architecto magnam praesentium! Repudiandae facere alias natus esse delectus, ex ratione similique explicabo blanditiis eius ducimus sequi vero incidunt? Fugiat, voluptatibus!
+</p>
+<p class="largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nemo porro, dolores atque natus ipsam repellendus esse, consectetur adipisci debitis reprehenderit! Accusantium aliquam omnis maiores nulla ducimus explicabo blanditiis corrupti.
+</p>
+<p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, dignissimos, ducimus blanditiis porro sequi maiores ratione laudantium voluptas ut unde vitae! Veritatis doloremque sequi id voluptates omnis. Illum, dignissimos tenetur!
+</p>
+<p id="unique">id yo</p>
+
+<!-- Grouping selector -->
+<h4>im heading 4</h4>
+<a href="index.html" target="_blank">index file</a>
+<h3>im heading 3</h3>
+
+<div>
+    <p>
+        <span>im a child</span>
+    </p>
+</div>
+
+<div>
+    <span>
+        <p>
+            <span>im a descendant</span>
+        </p>
+    </span>
+</div>
+
+<!-- attribute selector -->
+<a href="http://nados.io" target="_blank">NADOS</a>
+<a href="http://google.in">GOOGLE</a>
+<a href="http://netflix.com" target="_blank">netflix</a>
+<p class="para">im attribute selector</p>
+
+
+</body>
+</html>
