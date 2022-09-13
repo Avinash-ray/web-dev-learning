@@ -44,8 +44,21 @@ console.log(captainAmerica[key])
 /* access in 1 line
 console.log(`${key} : ${captainAmerica[key]}`);
     */
-
 }
+
+// print using bracket notation
+console.log(captainAmerica["friends"][0])
+
+// print nested object
+console.log(captainAmerica.address.City);
+
+// check type of value stored in key
+console.log(typeof captainAmerica.SayHi)
+
+// deleting the key of an object
+delete captainAmerica.firstName
+console.log(captainAmerica.firstName)
+
 
 
 
