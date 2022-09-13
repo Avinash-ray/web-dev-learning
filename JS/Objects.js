@@ -41,5 +41,12 @@ captainAmerica.SayHi();
 for(let key in captainAmerica){
 console.log(key)
 console.log(captainAmerica[key])
+/* access in 1 line
+console.log(`${key} : ${captainAmerica[key]}`);
+    */
+
 }
+
+
+
 
