@@ -36,3 +36,10 @@ console.log(captainAmerica);
 console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
 captainAmerica.SayHi();
+
+// for
+for(let key in captainAmerica){
+console.log(key)
+console.log(captainAmerica[key])
+}
+
