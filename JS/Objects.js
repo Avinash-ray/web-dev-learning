@@ -28,7 +28,7 @@ let captainAmerica= {
         Country: "USA"
     },
     SayHi: function(){
-        console.log(`hello my name is ${this.firstName}`);
+        console.log(`hello my name is ${this.firstName}`);      //method
     }
 }
 
