@@ -7,12 +7,24 @@
 // }
 // outer();
 
+// function outer(){
+//     var a= 10;
+//     function inner(){
+//         console.log(a)
+//     }
+//     return inner;
+// }
+// var z= outer();
+// console.log(z);
+
 function outer(){
-    var a= 10;
+    var a= 7;
     function inner(){
         console.log(a)
     }
+    a= 10;
     return inner;
 }
-var z= outer();
-console.log(z);
+var c= outer();
+console.log(c+" ");
+c();
