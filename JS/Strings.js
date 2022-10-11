@@ -47,5 +47,11 @@ let trimstr= "        hello     "
 console.log(trimstr.length)
 console.log(trimstr.trim().length)
 
+// split
+var str= "Hello hello myself hello avinash"
+console.log(str);
+var a= str.split("hello")
+console.log(a);
+
 
 
