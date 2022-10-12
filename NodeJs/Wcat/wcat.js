@@ -9,11 +9,19 @@ let inputArr= process.argv.slice(2)
 // console.log(input)
 
 let filesArr=[]
+let optionsArr=[]
 // place files path in filesArr
 for(let i=0; i< inputArr.length; i++){
+    let firstChar= inputArr[i].charAt(0);
+    // console.log(firstChar);
+    if(firstChar == "-"){
+        optionsArr.push(inputArr[i])
+    }
+    else{
     filesArr.push(inputArr[i])
+    }
 }
-console.log(filesArr)
+// console.log(filesArr)
 
 // check if all the files are present
 for(let i=0; i< filesArr.length; i++){
@@ -30,4 +38,7 @@ for(let i=0; i< filesArr.length; i++){
     let fileContent= fs.readFileSync(filesArr[i])
     content += fileContent+"\n";
 }
-console.log(content);
+// console.log(content);
+
+let contentArr= content.split("\r\n")
+console.log(contentArr);
