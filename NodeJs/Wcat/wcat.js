@@ -46,7 +46,7 @@ for(let i=0; i< filesArr.length; i++){
 // console.log(content);
 
 let contentArr= content.split("\r\n")
-console.table(contentArr);
+// console.table(contentArr);
 
 // check if -s is present or not
 let istrue= optionsArr.includes("-s");
@@ -60,7 +60,7 @@ if(istrue){
             contentArr[i] = null;
         }
     }
-    console.table(contentArr)
+    // console.table(contentArr)
 
 // var tempArr= [];
 // push everything in tempArr except null
@@ -69,7 +69,7 @@ for(let i=0; i< contentArr.length;i++){
         tempArr.push(contentArr[i])
     }
 }
-console.log("data after removing extra lines\n",tempArr)
+// console.log("data after removing extra lines\n",tempArr)
 }
 contentArr = tempArr;
 
