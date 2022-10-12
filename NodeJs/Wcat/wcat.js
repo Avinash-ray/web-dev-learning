@@ -1,6 +1,7 @@
 /*1). node wcat.js filepath => display content of a file
  2). node wcat.js filepath1 filepath2 filepath3 =>displays the content of all files in terminal in concatenated
 form in given order 
+3). node wcat.js -s filepath => change multiple line breaks into singular
 
 */
 
@@ -36,9 +37,31 @@ for(let i=0; i< filesArr.length; i++){
 let content= "";
 for(let i=0; i< filesArr.length; i++){
     let fileContent= fs.readFileSync(filesArr[i])
-    content += fileContent+"\n";
+    content += fileContent+"\r\n";
 }
 // console.log(content);
 
 let contentArr= content.split("\r\n")
-console.log(contentArr);
+console.table(contentArr);
+
+// check if -s is present or not
+let istrue= optionsArr.includes("-s");
+if(istrue){
+    for(let i=1; i< contentArr.length; i++){
+        if(contentArr[i] =="" && contentArr[i-1] ==""){
+            contentArr[i] = null;
+        }
+        else if(contentArr[i] =="" && contentArr[i-1] ==null){
+            contentArr[i] = null;
+        }
+    }
+}
+
+let tempArr= [];
+// push everytjing in tempArr except null
+for(let i=0; i< contentArr.length;i++){
+    if(contentArr[i] != null){
+        tempArr.push(contentArr[i])
+    }
+}
+console.log("data after removing extra lines\n",tempArr)
