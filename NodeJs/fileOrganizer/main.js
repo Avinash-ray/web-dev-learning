@@ -1,4 +1,6 @@
 
+let helpFunc= require("./commands/help")
+
 let inputArr= process.argv.slice(2)
 let command= inputArr[0];
 
@@ -12,7 +14,7 @@ switch(command){
         break;
 
     case "help":
-        // call help function
+        helpFunc.help()
         break;
 
     default:
